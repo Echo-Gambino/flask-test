@@ -25,7 +25,16 @@ def hello(name):
             ]
 
     randomNumber = randint(0, len(quotes)-1);
-    quote = quotes[randomNumber] # </string:name></string:name>
+    quote = quotes[randomNumber]
+
+    something = "This can be anything!";
+
+    something = 1;
+
+    something = list();
+
+    for x in range(0, 4):
+        something.append(x);
 
     return render_template(
             'test.html', **locals())
